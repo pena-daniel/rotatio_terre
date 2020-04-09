@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+    background-repeat: no-repeat;
+}
+.contenant{
+    height: 500px;
+    width: 500px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+   
+}
+.roule{
+    border: solid 1px rgba(70, 63, 63, 0.26);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 500px;
+    margin-top: 25%;
+    background: url("../image/terre.jpeg") repeat-x;
+    background-size: cover;
+    animation: move-map 50s infinite linear;
+    
+}
+
+
+.ombre{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 52%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%,rgba(0, 0, 0, 0.335),rgba(255, 255, 255, 0.431));
+    transform: rotateX(88deg) translateZ(100px);
+}
+
+@keyframes move-map {
+    0% {
+      background-position: -849px 0; }
+  
+    100% {
+      background-position: 0 0; } 
+}
+
