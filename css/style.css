@@ -15,31 +15,32 @@ body{
 }
 .roule{
     border: solid 1px rgba(70, 63, 63, 0.26);
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     margin-left: 500px;
     margin-top: 25%;
     background: url("../image/terre.jpeg") repeat-x;
     background-size: cover;
-    animation: move-map 50s infinite linear;
-    
+    animation: move-map 20s infinite linear;
+    box-shadow: -20px -20px 50px 2px black inset, 0 0 20px 2px black;
 }
 
 
 .ombre{
     position: absolute;
-    height: 250px;
-    width: 250px;
-    top: 52%;
+    height: 400px;
+    width: 400px;
+    top: 69.9%;
     border-radius: 50%;
-    background: radial-gradient(circle at 50% 50%,rgba(0, 0, 0, 0.335),rgba(255, 255, 255, 0.431));
-    transform: rotateX(88deg) translateZ(100px);
+    background: radial-gradient(circle at 50% 50%,rgba(0, 0, 0, 0.65),rgba(255, 255, 255, 0.431));
+    transform: rotateX(95deg) translateZ(130px);
+    
 }
 
 @keyframes move-map {
     0% {
-      background-position: -849px 0; }
+      background-position: -1000px 0; }
   
     100% {
       background-position: 0 0; } 
